@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV ESTEBAN</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/myAvatar.png" />
+</head>
+
+<body>
+  <!--INICIO-->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#form-academy">Acerca de Mí</a></li>
+        <li><a href="#proyect">Proyectos</a></li>
+        <li><a href="#contac">Contacto</a></li>
+        <li><a download="CV" href="images/curriculum-programador.webp">Descargar CV</a></li>
+      </ul>
+
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <h1> Esteban Damian Caro </h1>
+      <h3> Programador Junior</h3>
+    </section>
+    <!--ACERCA DE MÍ-->
+    <section id="form-academy">
+      <h2>ACERCA DE MÍ</h2>
+      <p>Programador innovador y emprendedor de Internet que se empeña en hacer del mundo un lugar más unido y
+        conectado. </p>
+      <p>Dominio del desarrollo de software y del trabajo con diferentes estructuras de datos.</p>
+      <p></p>
+
+    </section>
+    <!--PROYECTOS-->
+    <section id="proyect">
+      <h2> PROYECTOS</h2>
+      <div class="List-proyect">
+        <div class="project-detail">
+          <img src="./images/calculadora.png">
+          <h3>CALCULADORA CIENTIFICA</h3>
+          <p>La calculadora con Javascript es un ejercicio muy habitual cuando estamos dando los primeros pasos en
+            cualquier lenguaje de programación.</p>
+          <a href="https://pablomonteserin.com/curso/javascript/calculadora/">Enlace
+            al proyecto</a>
+        </div>
+        <div class="project-detail">
+          <img src="./images/OIP (1).jpg">
+          <h3>CREACIÓN DE PAGINAS WEB PARA EVENTOS</h3>
+          <p>El diseño web es una disciplina enfocada en la planificación, ideación, creación e implementación de
+            interfaces y plataformas digitales.</p>
+          <a href="https://es.wix.com/website/templates/html/events">Enlace
+            al proyecto</a>
+        </div>
+      </div>
+    </section>
+    <br>
+    <!--CONTACTO-->
+    <section id="contac">
+      <h2>CONTACTO</h2>
+
+      <section class="contacto" id="contacto">
+        <div class="formulario-contacto-contenedor">
+          <div class="formulario-contacto">
+          <!--  <form action="https://formspree.io/f/mjvdrbqr" method="POST">-->
+              <div class="control-formulario">
+                <form id="formulario2">
+                  <label for="name">Nombre:</label>
+                  <input type="text" id="name" name="sender-name" placeholder="Escribe tu nombre" class="input-field"
+                    required />
+              </div>
+              <div class="control-formulario">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="sender-email" placeholder="Ingreso tu correo electrónico"
+                  class="input-field" required />
+              </div>
+              <div class="control-formulario">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" cols="60" rows="5" placeholder="Escribe tu mensaje" name="mensaje"
+                  class="input-field" required></textarea>
+              </div>
+              <input type="submit" onclick=" return validar();" value="Enviar" id="submit-btn" class="submit-btn" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </section>
+
+  </main>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
